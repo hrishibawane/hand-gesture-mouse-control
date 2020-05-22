@@ -16,11 +16,11 @@ To run this project locally on your system:
 - Gesture: Two => Action: Left Click
 - Gesture: One (or any other) => Move Pointer
 
-![Drag](https://github.com/hrishibawane/hand-gesture-mouse-control/images/ss_0.png)
+![Drag](images/ss_0.png?raw=true)
 
-![Left Click](https://github.com/hrishibawane/hand-gesture-mouse-control/images/ss_2.png)
+![Left Click](images/ss_2.png)
 
-![Move](https://github.com/hrishibawane/hand-gesture-mouse-control/images/ss_1.png)
+![Move](images/ss_1.png)
 
 **Note:** The hand detection works on skin detection. Thus, any background noise should be avoided.
 
