@@ -31,8 +31,7 @@ while True:
     else:
         pai.moveTo(mx, my)
         
-    cv2.namedWindow('frame', cv2.WINDOW_NORMAL)
-    cv2.resizeWindow('frame', 640, 360)
+
     cv2.imshow('frame', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):

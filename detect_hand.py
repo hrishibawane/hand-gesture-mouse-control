@@ -14,7 +14,7 @@ def load_img(image):
     return np_img
 
 def hdet(frame, min_YCrCb, max_YCrCb):
-    print(frame.shape)
+    
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     # Convert frame to YCrCb
     imgYCrCb = cv2.cvtColor(frame, cv2.COLOR_BGR2YCR_CB)
@@ -55,8 +55,6 @@ def hdet(frame, min_YCrCb, max_YCrCb):
             pred = model.predict(np_img)
             cat = classes[np.argmax(pred)]
             cv2.imwrite('ok.jpg', image)
-            cv2.putText(frame, "{}".format(cat), (cx, cy), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
-            cv2.imshow('ok', image)
 
     mx, my = cx*3, cy*2.25
 
